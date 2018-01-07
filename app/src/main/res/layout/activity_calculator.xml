@@ -12,7 +12,8 @@
         android:textSize="30sp"
         android:textColor="@color/textColor"
         android:layout_alignParentTop="true"
-        android:background="@color/Layout_bg" />
+        android:background="@color/Layout_bg"
+        android:textAlignment="textEnd"/>
 
     <TextView
     android:layout_below="@id/text"
@@ -27,7 +28,7 @@
     android:textAlignment="textEnd"/>
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/expressionText">
 
