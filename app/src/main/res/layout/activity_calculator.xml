@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/Layout_bg">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/textColor"
+        android:layout_alignParentTop="true"
+        android:background="@color/Layout_bg" />
+
+    <TextView
+    android:layout_below="@id/text"
+    android:id="@+id/expressionText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="50sp"
+    android:textColor="@color/textColor"
+    android:background="@color/Layout_bg"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:textAlignment="textEnd"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expressionText">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@id/number1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/clearBtn"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/clear"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:background="@color/buttonBackground" />
+
+            <Button
+                android:id="@+id/delBtn"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/del"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:background="@color/buttonBackground"/>
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/divide"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="operationClicked"
+                android:background="@color/operationButtonBackground"/>
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/multiply"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="operationClicked"
+                android:background="@color/operationButtonBackground"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/number7"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="@string/_7"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="numberClicked"
+                android:background="@color/buttonBackground"/>
+
+            <Button
+                android:id="@+id/number8"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/_8"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="numberClicked"
+                android:background="@color/buttonBackground"/>
+
+            <Button
+                android:id="@+id/number9"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/_9"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="numberClicked"
+                android:background="@color/buttonBackground"/>
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/minus"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="operationClicked"
+                android:background="@color/operationButtonBackground"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/number4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="@string/_4"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="numberClicked"
+                android:background="@color/buttonBackground"/>
+
+            <Button
+                android:id="@+id/number5"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/_5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="numberClicked"
+                android:background="@color/buttonBackground"/>
+
+            <Button
+                android:id="@+id/number6"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/_6"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="numberClicked"
+                android:background="@color/buttonBackground"/>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:text="@string/add"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="30sp"
+                android:textColor="@color/textColor"
+                android:onClick="operationClicked"
+                android:background="@color/operationButtonBackground"/>
+        </TableRow>
+    </TableLayout>
+
+        <Button
+            android:id="@+id/number1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:onClick="numberClicked"
+            android:layout_above="@+id/number0"
+            android:layout_alignParentStart="true"
+            android:background="@color/buttonBackground"
+            android:text="@string/_1"
+            android:textColor="@color/textColor"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/number2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/number0"
+
+            android:layout_toStartOf="@+id/number3"
+            android:background="@color/buttonBackground"
+            android:text="@string/_2"
+            android:textColor="@color/textColor"
+            android:textSize="30sp"
+            android:onClick="numberClicked"/>
+
+        <Button
+            android:id="@+id/number3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/number0"
+            android:onClick="numberClicked"
+            android:layout_toEndOf="@+id/number0"
+            android:background="@color/buttonBackground"
+            android:text="@string/_3"
+            android:textColor="@color/textColor"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/equal"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="95dp"
+            android:layout_height="160dp"
+
+            android:layout_alignBottom="@+id/dot"
+            android:layout_toEndOf="@+id/number3"
+            android:background="@color/operationButtonBackground"
+            android:text="@string/equal"
+            android:textColor="@color/textColor"
+            android:textSize="30sp"
+            android:onClick="operationClicked"/>
+
+
+        <Button
+            android:id="@+id/number0"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/equal"
+            android:layout_alignParentStart="true"
+            android:background="@color/buttonBackground"
+            android:text="@string/_0"
+            android:textColor="@color/textColor"
+            android:textSize="30sp"
+            android:onClick="numberClicked"/>
+
+        <Button
+            android:id="@+id/dot"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/number0"
+            android:background="@color/buttonBackground"
+            android:text="@string/dot"
+            android:textColor="@color/textColor"
+            android:textSize="30sp"
+            android:onClick="numberClicked"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
