@@ -154,9 +154,15 @@ public class CalculatorActivity extends AppCompatActivity{
                text.setText(expression);}
                break;
            case R.id.equal:
-                Calculator calculator = new Calculator(expression);
+
                 text.setText(expression);
-                expression = String.valueOf(calculator.calculate());
+                if (!expression.equals("")) {
+                    Calculator calculator = new Calculator(expression);
+                    expression = calculator.calculate();
+                    displayExpression = expression;
+                }
+                else
+                    expression="0.0";
                 expressionText.setText(expression);
                break;
        }
